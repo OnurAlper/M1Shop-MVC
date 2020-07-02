@@ -1,0 +1,525 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+}
+
+@*<style>
+        .row {
+            margin: 15px;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="gallery" class="col-md-4" )>
+                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid rounded">
+            </a>
+            <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid rounded">
+            </a>
+            <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid rounded">
+            </a>
+        </div>
+        <div class="row">
+            <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid rounded">
+            </a>
+            <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid rounded">
+            </a>
+            <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid rounded">
+            </a>
+
+        </div>
+        <div class="row">
+            <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid rounded">
+            </a>
+            <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid rounded">
+            </a>
+            <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid rounded">
+            </a>
+
+        </div>
+    </div>
+
+    <script>
+        $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>*@
+@*<style>
+    .vitrin_list {
+        float: left;
+        width: 108px;
+        max-height: 109px;
+        padding: 7px 16px 5px 0;
+        text-align: left;
+        font-size: 11px;
+        list-style: none;
+        margin-bottom: 1px;
+    }
+
+    .homepage {
+        float: left;
+        width: 108px;
+        max-height: 109px;
+        padding: 7px 16px 5px 0;
+        text-align: left;
+        font-size: 11px;
+    }
+
+    .homepage-content {
+        float: left;
+        width: 108px;
+        max-height: 109px;
+        padding: 7px 16px 5px 0;
+        text-align: left;
+        font-size: 11px;
+    }
+
+    .homepage {
+        width: 838px;
+        float: left;
+    }
+
+    .homepage-content {
+        width: 838px;
+        float: left;
+    }
+
+    .homepage {
+        width: calc(50% - 8px);
+        float: left;
+        padding: 16px 16px 0 0;
+    }
+
+    .estate-projects {
+        width: calc(50% - 8px);
+        float: left;
+        padding: 16px 16px 0 0;
+    }
+
+    .projects {
+        width: calc(50% - 8px);
+        float: left;
+        padding: 16px 16px 0 0;
+    }
+
+    .homepage {
+        width: 100%;
+        height: 174px;
+        background: #f5f5f5;
+        display: block;
+    }
+
+    .estate-projects {
+        width: 100%;
+        height: 174px;
+        display: block;
+    }
+
+    .projects img {
+        width: 100%;
+        height: 174px;
+        background: #f5f5f5;
+        display: block;
+    }
+</style>
+
+<h3 style="font-size:15px;">
+    <small><a style="font-size: 16px; float: right;" href="~/Products/Index">Tüm vitrin ilanlarını göster</a></small>
+    Anasayfa Vitrini
+</h3>
+
+<ul class="vitrin-list clearfix" style="margin-bottom: 60px;">
+
+    <li class="vitrin_list">
+
+        <a href="@Url.Action("Details" ,"CarDetail")?id=1" title="Oraklar Gruop Cıtroen C5 2.0 Hdi">
+            <img alt="Oraklar Gruop Cıtroen C5 2.0 Hdi" src="https://i0.shbdn.com/photos/52/54/63/thmb_81252546303n.jpg" srcset="https://i0.shbdn.com/photos/52/54/63/thmb_81252546303n.jpg 1x, https://i0.shbdn.com/photos/52/54/63/lthmb_81252546303n.jpg 2x">
+            <span>Oraklar Gruop Cıtroen C5 2.0 Hdi</span>
+        </a>
+
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/is-makineleri-sanayi-sanayi-endustri-makineleri-maske-makinasi-824322475/detay" title="Maske Makinasi">
+            <img alt="Maske Makinasi" src="https://i0.shbdn.com/photos/32/24/75/thmb_824322475gbl.jpg" srcset="https://i0.shbdn.com/photos/32/24/75/thmb_824322475gbl.jpg 1x, https://i0.shbdn.com/photos/32/24/75/lthmb_824322475gbl.jpg 2x">
+            <span>Maske Makinasi</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/yedek-parca-aksesuar-donanim-tuning-otomotiv-ekipmanlari-yedek-parca-dizel-enjektor-pompa-515829338/detay" title="Dizel Enjektör &amp; Pompa">
+            <img alt="Dizel Enjektör &amp; Pompa" src="https://i0.shbdn.com/photos/82/93/38/thmb_51582933846l.jpg" srcset="https://i0.shbdn.com/photos/82/93/38/thmb_51582933846l.jpg 1x, https://i0.shbdn.com/photos/82/93/38/lthmb_51582933846l.jpg 2x">
+            <span>Dizel Enjektör &amp; Pompa</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/emlak-is-yeri-devren-kiralik-imalathane-soguk-hava-depo-gida-islerine-uygun-822831666/detay" title="Imalathane Soğuk Hava Depo Gıda Işlerine Uygun">
+            <img alt="Imalathane Soğuk Hava Depo Gıda Işlerine Uygun" src="https://i0.shbdn.com/photos/83/16/66/thmb_822831666ti5.jpg" srcset="https://i0.shbdn.com/photos/83/16/66/thmb_822831666ti5.jpg 1x, https://i0.shbdn.com/photos/83/16/66/lthmb_822831666ti5.jpg 2x">
+            <span>Imalathane Soğuk Hava Depo Gıda Işlerine Uygun</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/hayvanlar-alemi-aksesuarlar-buyukbas-kucukbas-9x50-mahyali-akilli-pencereli-2katyalitimli-748449992/detay" title="9x50 Mahyalı Akıllı Pencereli 2katyalıtımlı">
+            <img alt="9x50 Mahyalı Akıllı Pencereli 2katyalıtımlı" src="https://i0.shbdn.com/photos/44/99/92/thmb_748449992kth.jpg" srcset="https://i0.shbdn.com/photos/44/99/92/thmb_748449992kth.jpg 1x, https://i0.shbdn.com/photos/44/99/92/lthmb_748449992kth.jpg 2x">
+            <span>9x50 Mahyalı Akıllı Pencereli 2katyalıtımlı</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/ikinci-el-ve-sifir-alisveris-yiyecek-icecek-icecek-salgam-suyu-ev-yapimi-ucretsiz-kargo-kapida-odeme-imkani-2-x-5lt-671066640/detay" title="Şalgam Suyu Ev Yapımı Ücretsiz Kargo Kapıda Ödeme Imkanı 2 X 5lt">
+            <img alt="Şalgam Suyu Ev Yapımı Ücretsiz Kargo Kapıda Ödeme Imkanı 2 X 5lt" src="https://i0.shbdn.com/photos/06/66/40/thmb_671066640603.jpg" srcset="https://i0.shbdn.com/photos/06/66/40/thmb_671066640603.jpg 1x, https://i0.shbdn.com/photos/06/66/40/lthmb_671066640603.jpg 2x">
+            <span>Şalgam Suyu Ev Yapımı Ücretsiz Kargo Kapıda Ödeme Imkanı 2 X 5lt</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/hayvanlar-alemi-aksesuarlar-buyukbas-kucukbas-ciftlik-ekipmanlari-811828554/detay" title="Çiftlik Ekipmanları">
+            <img alt="Çiftlik Ekipmanları" src="https://i0.shbdn.com/photos/82/85/54/thmb_811828554pm0.jpg" srcset="https://i0.shbdn.com/photos/82/85/54/thmb_811828554pm0.jpg 1x, https://i0.shbdn.com/photos/82/85/54/lthmb_811828554pm0.jpg 2x">
+            <span>Çiftlik Ekipmanları</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/emlak-konut-satilik-kucukkuyu-da-asosa-yakin-mustakil-villa-724980538/detay" title="Küçükkuyu Da Asosa Yakın Müstakil Villa">
+            <img alt="Küçükkuyu Da Asosa Yakın Müstakil Villa" src="https://i0.shbdn.com/photos/98/05/38/thmb_724980538lho.jpg" srcset="https://i0.shbdn.com/photos/98/05/38/thmb_724980538lho.jpg 1x, https://i0.shbdn.com/photos/98/05/38/lthmb_724980538lho.jpg 2x">
+            <span>Küçükkuyu Da Asosa Yakın Müstakil Villa</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/vasita-otomobil-volvo-volvo-s90-momentum-plus-xenium-ll-823149431/detay" title="Volvo S90 Momentum Plus Xenium Ll">
+            <img alt="Volvo S90 Momentum Plus Xenium Ll" src="https://i0.shbdn.com/photos/14/94/31/thmb_823149431utg.jpg" srcset="https://i0.shbdn.com/photos/14/94/31/thmb_823149431utg.jpg 1x, https://i0.shbdn.com/photos/14/94/31/lthmb_823149431utg.jpg 2x">
+            <span>Volvo S90 Momentum Plus Xenium Ll</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/emlak-konut-satilik-bu-gayrimenkul-sadece-su-an-harakete-gececek-musteriler-icin-702308343/detay" title="''bu Gayrimenkul Sadece Şu An Harakete Gececek Müşteriler Için.">
+            <img alt="''bu Gayrimenkul Sadece Şu An Harakete Gececek Müşteriler Için." src="https://i0.shbdn.com/photos/30/83/43/thmb_702308343mgw.jpg" srcset="https://i0.shbdn.com/photos/30/83/43/thmb_702308343mgw.jpg 1x, https://i0.shbdn.com/photos/30/83/43/lthmb_702308343mgw.jpg 2x">
+            <span>''bu Gayrimenkul Sadece Şu An Harakete Gececek Müşteriler Için.</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/vasita-kiralik-araclar-otomobil-caron-arac-kiralama-dan-dizel-2900-tl-515821391/detay" title="Caron Araç Kiralama Dan Dizel 2900 Tl">
+            <img alt="Caron Araç Kiralama Dan Dizel 2900 Tl" src="https://i0.shbdn.com/photos/82/13/91/thmb_515821391ulg.jpg" srcset="https://i0.shbdn.com/photos/82/13/91/thmb_515821391ulg.jpg 1x, https://i0.shbdn.com/photos/82/13/91/lthmb_515821391ulg.jpg 2x">
+            <span>Caron Araç Kiralama Dan Dizel 2900 Tl</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/hayvanlar-alemi-aksesuarlar-buyukbas-kucukbas-10x32-nadide-model-makasli-2-kat-izoleli-nakliye-pluskurulum-dahil-756150550/detay" title="10x32 Nadide Model Makaslı 2 Kat Izoleli Nakliye+kurulum Dahil">
+            <img alt="10x32 Nadide Model Makaslı 2 Kat Izoleli Nakliye+kurulum Dahil" src="https://i0.shbdn.com/photos/15/05/50/thmb_756150550iof.jpg" srcset="https://i0.shbdn.com/photos/15/05/50/thmb_756150550iof.jpg 1x, https://i0.shbdn.com/photos/15/05/50/lthmb_756150550iof.jpg 2x">
+            <span>10x32 Nadide Model Makaslı 2 Kat Izoleli Nakliye+kurulum Dahil</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/emlak-konut-kiralik-alacati-nin-kalbinde-sahibinden-2-katli-muhtesem-tas-ev-4-aylik-821119919/detay" title="Alaçatı'nın Kalbinde Sahibinden 2 Katlı Muhteşem Taş Ev 4 Aylık">
+            <img alt="Alaçatı'nın Kalbinde Sahibinden 2 Katlı Muhteşem Taş Ev 4 Aylık" src="https://i0.shbdn.com/photos/11/99/19/thmb_821119919kpa.jpg" srcset="https://i0.shbdn.com/photos/11/99/19/thmb_821119919kpa.jpg 1x, https://i0.shbdn.com/photos/11/99/19/lthmb_821119919kpa.jpg 2x">
+            <span>Alaçatı'nın Kalbinde Sahibinden 2 Katlı Muhteşem Taş Ev 4 Aylık</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/emlak-konut-satilik-sahibinden-komisyonsuz-tuzla-evora-istanbul-da-2-plus1-sifir-705838599/detay" title="Sahibinden Komisyonsuz Tuzla Evora Istanbul'da 2+1 Sıfır">
+            <img alt="Sahibinden Komisyonsuz Tuzla Evora Istanbul'da 2+1 Sıfır" src="https://i0.shbdn.com/photos/83/85/99/thmb_705838599egz.jpg" srcset="https://i0.shbdn.com/photos/83/85/99/thmb_705838599egz.jpg 1x, https://i0.shbdn.com/photos/83/85/99/lthmb_705838599egz.jpg 2x">
+            <span>Sahibinden Komisyonsuz Tuzla Evora Istanbul'da 2+1 Sıfır</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/vasita-arazi-suv-pickup-land-rover-generalden-bayi-hatasiz-yetkili-servis-bakimli-823926527/detay" title="Generalden Bayi Hatasız Yetkili Servis Bakımlı">
+            <img alt="Generalden Bayi Hatasız Yetkili Servis Bakımlı" src="https://i0.shbdn.com/photos/92/65/27/thmb_823926527ne9.jpg" srcset="https://i0.shbdn.com/photos/92/65/27/thmb_823926527ne9.jpg 1x, https://i0.shbdn.com/photos/92/65/27/lthmb_823926527ne9.jpg 2x">
+            <span>Generalden Bayi Hatasız Yetkili Servis Bakımlı</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/emlak-konut-satilik-vahdet-ten-akcay-kordon-a-200-metre-2-plus1-genis-daire-778563471/detay" title="Vahdet'ten Akçay Kordon'a 200 Metre 2+1 Geniş Daire">
+            <img alt="Vahdet'ten Akçay Kordon'a 200 Metre 2+1 Geniş Daire" src="https://i0.shbdn.com/photos/56/34/71/thmb_778563471fuj.jpg" srcset="https://i0.shbdn.com/photos/56/34/71/thmb_778563471fuj.jpg 1x, https://i0.shbdn.com/photos/56/34/71/lthmb_778563471fuj.jpg 2x">
+            <span>Vahdet'ten Akçay Kordon'a 200 Metre 2+1 Geniş Daire</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/vasita-otomobil-bmw-bmw-520d-comfort-819717085/detay" title="Bmw 520d Comfort">
+            <img alt="Bmw 520d Comfort" src="https://i0.shbdn.com/photos/71/70/85/thmb_819717085stx.jpg" srcset="https://i0.shbdn.com/photos/71/70/85/thmb_819717085stx.jpg 1x, https://i0.shbdn.com/photos/71/70/85/lthmb_819717085stx.jpg 2x">
+            <span>Bmw 520d Comfort</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/emlak-konut-satilik-mukemmellll-bir-yasam-alanini-sizlere-gore-hazirladikkkkk-823676400/detay" title="**mükemmellll Bir Yaşam Alanını Sizlere Göre Hazırladıkkkkk***">
+            <img alt="**mükemmellll Bir Yaşam Alanını Sizlere Göre Hazırladıkkkkk***" src="https://i0.shbdn.com/photos/67/64/00/thmb_823676400msz.jpg" srcset="https://i0.shbdn.com/photos/67/64/00/thmb_823676400msz.jpg 1x, https://i0.shbdn.com/photos/67/64/00/lthmb_823676400msz.jpg 2x">
+            <span>**mükemmellll Bir Yaşam Alanını Sizlere Göre Hazırladıkkkkk***</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/emlak-konut-satilik-piramit-marmara-2-plus1-full-esyali-satilik-daireler-623970991/detay" title="Piramit Marmara 2+1 Full Eşyalı Satılık Daireler">
+            <img alt="Piramit Marmara 2+1 Full Eşyalı Satılık Daireler" src="https://i0.shbdn.com/photos/97/09/91/thmb_623970991ycf.jpg" srcset="https://i0.shbdn.com/photos/97/09/91/thmb_623970991ycf.jpg 1x, https://i0.shbdn.com/photos/97/09/91/lthmb_623970991ycf.jpg 2x">
+            <span>Piramit Marmara 2+1 Full Eşyalı Satılık Daireler</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/emlak-konut-satilik-pazarliksiz-avcilar-gumuspala-da-cati-dublexi-616214397/detay" title="Pazarlıksız Avcılar Gümüşpala Da Çatı Dublexi">
+            <img alt="Pazarlıksız Avcılar Gümüşpala Da Çatı Dublexi" src="https://i0.shbdn.com/photos/21/43/97/thmb_616214397xdp.jpg" srcset="https://i0.shbdn.com/photos/21/43/97/thmb_616214397xdp.jpg 1x, https://i0.shbdn.com/photos/21/43/97/lthmb_616214397xdp.jpg 2x">
+            <span>Pazarlıksız Avcılar Gümüşpala Da Çatı Dublexi</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/vasita-arazi-suv-pickup-porsche-2016-bayi-porsche-cayenne-boyasiz-hatasiz-46000-km-cikisli-taba-807033532/detay" title="2016 Bayi Porsche Cayenne Boyasız Hatasız/46000 Km/çıkışlı/taba">
+            <img alt="2016 Bayi Porsche Cayenne Boyasız Hatasız/46000 Km/çıkışlı/taba" src="https://i0.shbdn.com/photos/03/35/32/thmb_807033532780.jpg" srcset="https://i0.shbdn.com/photos/03/35/32/thmb_807033532780.jpg 1x, https://i0.shbdn.com/photos/03/35/32/lthmb_807033532780.jpg 2x">
+            <span>2016 Bayi Porsche Cayenne Boyasız Hatasız/46000 Km/çıkışlı/taba</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/yedek-parca-aksesuar-donanim-tuning-otomotiv-ekipmanlari-ses-goruntu-sistemleri-fiat-fiorino-uyumlu-android-7.1.2-multimedya-oem-double-teyp-625864433/detay" title="Fiat Fiorino Uyumlu Android 7.1.2 Multimedya Oem Double Teyp">
+            <img alt="Fiat Fiorino Uyumlu Android 7.1.2 Multimedya Oem Double Teyp" src="https://i0.shbdn.com/photos/86/44/33/thmb_625864433cgf.jpg" srcset="https://i0.shbdn.com/photos/86/44/33/thmb_625864433cgf.jpg 1x, https://i0.shbdn.com/photos/86/44/33/lthmb_625864433cgf.jpg 2x">
+            <span>Fiat Fiorino Uyumlu Android 7.1.2 Multimedya Oem Double Teyp</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/vasita-otomobil-renault-1-haziran-pazartesi-gunune-kadar-fiyat-bu-sonrasi-105-bin-789675593/detay" title="1 Haziran Pazartesi Gününe Kadar Fiyat Bu Sonrası 105 Bin">
+            <img alt="1 Haziran Pazartesi Gününe Kadar Fiyat Bu Sonrası 105 Bin" src="https://i0.shbdn.com/photos/67/55/93/thmb_78967559386r.jpg" srcset="https://i0.shbdn.com/photos/67/55/93/thmb_78967559386r.jpg 1x, https://i0.shbdn.com/photos/67/55/93/lthmb_78967559386r.jpg 2x">
+            <span>1 Haziran Pazartesi Gününe Kadar Fiyat Bu Sonrası 105 Bin</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/yedek-parca-aksesuar-donanim-tuning-otomotiv-ekipmanlari-yedek-parca-linea-euro-5-enjektoru-0445110351-55219886-515913059/detay" title="Linea Euro 5 Enjektörü 0445110351 - 55219886">
+            <img alt="Linea Euro 5 Enjektörü 0445110351 - 55219886" src="https://i0.shbdn.com/photos/91/30/59/thmb_515913059ih1.jpg" srcset="https://i0.shbdn.com/photos/91/30/59/thmb_515913059ih1.jpg 1x, https://i0.shbdn.com/photos/91/30/59/lthmb_515913059ih1.jpg 2x">
+            <span>Linea Euro 5 Enjektörü 0445110351 - 55219886</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/vasita-otomobil-hyundai-hatasiz-boyasiz-hyundai-elentra-821913225/detay" title="Hatasız ..boyasız ...hyundai Elentra">
+            <img alt="Hatasız ..boyasız ...hyundai Elentra" src="https://i0.shbdn.com/photos/91/32/25/thmb_8219132257gr.jpg" srcset="https://i0.shbdn.com/photos/91/32/25/thmb_8219132257gr.jpg 1x, https://i0.shbdn.com/photos/91/32/25/lthmb_8219132257gr.jpg 2x">
+            <span>Hatasız ..boyasız ...hyundai Elentra</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/vasita-arazi-suv-pickup-porsche-m-k-c-motors-2016-porsche-cayenne-bayi-boyasiz-bej-92000.km-807134686/detay" title="M K C Motors 2016 Porsche/cayenne Bayi/boyasız/bej/92000.km">
+            <img alt="M K C Motors 2016 Porsche/cayenne Bayi/boyasız/bej/92000.km" src="https://i0.shbdn.com/photos/13/46/86/thmb_807134686l8m.jpg" srcset="https://i0.shbdn.com/photos/13/46/86/thmb_807134686l8m.jpg 1x, https://i0.shbdn.com/photos/13/46/86/lthmb_807134686l8m.jpg 2x">
+            <span>M K C Motors 2016 Porsche/cayenne Bayi/boyasız/bej/92000.km</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/vasita-karavan-motokaravan-sifir-ozel-yapim-karavan-mobil-ofis-takas-imkani-mevcuttur-759524003/detay" title="Sıfır Özel Yapım Karavan (mobil Ofis). Takas Imkanı Mevcuttur.">
+            <img alt="Sıfır Özel Yapım Karavan (mobil Ofis). Takas Imkanı Mevcuttur." src="https://i0.shbdn.com/photos/52/40/03/thmb_759524003165.jpg" srcset="https://i0.shbdn.com/photos/52/40/03/thmb_759524003165.jpg 1x, https://i0.shbdn.com/photos/52/40/03/lthmb_759524003165.jpg 2x">
+            <span>Sıfır Özel Yapım Karavan (mobil Ofis). Takas Imkanı Mevcuttur.</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/hayvanlar-alemi-aksesuarlar-buyukbas-kucukbas-13x30-390m-2%2C5m-profilli-hayvan-depo-sogan-cadiri-717956503/detay" title="13x30 390m² 2,5m Profilli Hayvan Depo Soğan Çadırı">
+            <img alt="13x30 390m² 2,5m Profilli Hayvan Depo Soğan Çadırı" src="https://i0.shbdn.com/photos/95/65/03/thmb_7179565031ko.jpg" srcset="https://i0.shbdn.com/photos/95/65/03/thmb_7179565031ko.jpg 1x, https://i0.shbdn.com/photos/95/65/03/lthmb_7179565031ko.jpg 2x">
+            <span>13x30 390m² 2,5m Profilli Hayvan Depo Soğan Çadırı</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/emlak-is-yeri-satilik-15.000-kiracili-dukkan-821835442/detay" title="15.000 Kiracili Dukkan.">
+            <img alt="15.000 Kiracili Dukkan." src="https://i0.shbdn.com/photos/83/54/42/thmb_821835442gpt.jpg" srcset="https://i0.shbdn.com/photos/83/54/42/thmb_821835442gpt.jpg 1x, https://i0.shbdn.com/photos/83/54/42/lthmb_821835442gpt.jpg 2x">
+            <span>15.000 Kiracili Dukkan.</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/ikinci-el-ve-sifir-alisveris-cep-telefonu-modeller-yeni-gibi-512-gb-i-phone-xs-778194298/detay" title="Yeni Gibi 512 Gb I Phone Xs">
+            <img alt="Yeni Gibi 512 Gb I Phone Xs" src="https://i0.shbdn.com/photos/19/42/98/thmb_7781942988oh.jpg" srcset="https://i0.shbdn.com/photos/19/42/98/thmb_7781942988oh.jpg 1x, https://i0.shbdn.com/photos/19/42/98/lthmb_7781942988oh.jpg 2x">
+            <span>Yeni Gibi 512 Gb I Phone Xs</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/is-makineleri-sanayi-is-makineleri-satilik-9%2C5mt-3-ton-orumcek-vinc-ve-is-sepeti-701593149/detay" title="9,5mt - 3 Ton Örümcek Vinç Ve Iş Sepeti">
+            <img alt="9,5mt - 3 Ton Örümcek Vinç Ve Iş Sepeti" src="https://i0.shbdn.com/photos/59/31/49/thmb_701593149ll9.jpg" srcset="https://i0.shbdn.com/photos/59/31/49/thmb_701593149ll9.jpg 1x, https://i0.shbdn.com/photos/59/31/49/lthmb_701593149ll9.jpg 2x">
+            <span>9,5mt - 3 Ton Örümcek Vinç Ve Iş Sepeti</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/emlak-konut-kiralik-cesme-altinyunus-ta-superluks-full-esyali-kiralik-823668320/detay" title="Çeşme Altınyunus'ta Superluks Full Eşyalı Kiralık">
+            <img alt="Çeşme Altınyunus'ta Superluks Full Eşyalı Kiralık" src="https://i0.shbdn.com/photos/66/83/20/thmb_823668320gam.jpg" srcset="https://i0.shbdn.com/photos/66/83/20/thmb_823668320gam.jpg 1x, https://i0.shbdn.com/photos/66/83/20/lthmb_823668320gam.jpg 2x">
+            <span>Çeşme Altınyunus'ta Superluks Full Eşyalı Kiralık</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/vasita-otomobil-mercedes-benz-arn-auto-dan-71.000km-2016-hatasiz-e-200-exclusive-plusburmaster-plusf1-822603450/detay" title="Arn Auto'dan 71.000km 2016 Hatasız E 200 Exclusive+burmaster+f1">
+            <img alt="Arn Auto'dan 71.000km 2016 Hatasız E 200 Exclusive+burmaster+f1" src="https://i0.shbdn.com/photos/60/34/50/thmb_822603450x73.jpg" srcset="https://i0.shbdn.com/photos/60/34/50/thmb_822603450x73.jpg 1x, https://i0.shbdn.com/photos/60/34/50/lthmb_822603450x73.jpg 2x">
+            <span>Arn Auto'dan 71.000km 2016 Hatasız E 200 Exclusive+burmaster+f1</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/vasita-otomobil-bmw-sahibinden-girtlak-dolu-hatasiz-boyasiz-garantili-bayicikis-813241055/detay" title="Sahibinden Gırtlak Dolu/hatasız/boyasız/garantili/bayiçıkış">
+            <img alt="Sahibinden Gırtlak Dolu/hatasız/boyasız/garantili/bayiçıkış" src="https://i0.shbdn.com/photos/24/10/55/thmb_813241055zjg.jpg" srcset="https://i0.shbdn.com/photos/24/10/55/thmb_813241055zjg.jpg 1x, https://i0.shbdn.com/photos/24/10/55/lthmb_813241055zjg.jpg 2x">
+            <span>Sahibinden Gırtlak Dolu/hatasız/boyasız/garantili/bayiçıkış</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/emlak-konut-satilik-sahibinden-denize-sifir-ozel-yali-dairesi-789556800/detay" title="Sahibinden Denize Sıfır Özel Yalı Dairesi">
+            <img alt="Sahibinden Denize Sıfır Özel Yalı Dairesi" src="https://i0.shbdn.com/photos/55/68/00/thmb_789556800h9s.jpg" srcset="https://i0.shbdn.com/photos/55/68/00/thmb_789556800h9s.jpg 1x, https://i0.shbdn.com/photos/55/68/00/lthmb_789556800h9s.jpg 2x">
+            <span>Sahibinden Denize Sıfır Özel Yalı Dairesi</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/is-makineleri-sanayi-sanayi-cadir-tente-kepenk-pergola-tente-sistemleri-uretici-firmadan-822589115/detay" title="Pergola / Tente Sistemleri Üretici Firmadan">
+            <img alt="Pergola / Tente Sistemleri Üretici Firmadan" src="https://i0.shbdn.com/photos/58/91/15/thmb_822589115aoh.jpg" srcset="https://i0.shbdn.com/photos/58/91/15/thmb_822589115aoh.jpg 1x, https://i0.shbdn.com/photos/58/91/15/lthmb_822589115aoh.jpg 2x">
+            <span>Pergola / Tente Sistemleri Üretici Firmadan</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/doping-tanitim/#doping-3">
+            <img src="https://s0.shbdn.com/assets/images/see-your-ad-here-tr:f22d9eeae42a5ab3ac9e98f6d800c131.png" class="gri_border" alt="&amp;nbsp;" style="display: none !important;">
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/vasita-otomobil-bmw-ilk-sahibinden-bmw-5.20-ia-boyasiz-degisensiz-garaj-araci-816541884/detay" title="Ilk Sahibinden Bmw 5.20 Ia Boyasız-değişensiz Garaj Aracı">
+            <img alt="Ilk Sahibinden Bmw 5.20 Ia Boyasız-değişensiz Garaj Aracı" src="https://i0.shbdn.com/photos/54/18/84/thmb_816541884fxw.jpg" srcset="https://i0.shbdn.com/photos/54/18/84/thmb_816541884fxw.jpg 1x, https://i0.shbdn.com/photos/54/18/84/lthmb_816541884fxw.jpg 2x">
+            <span>Ilk Sahibinden Bmw 5.20 Ia Boyasız-değişensiz Garaj Aracı</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/ikinci-el-ve-sifir-alisveris-kisisel-bakim-kozmetik-hijyenik-urunler-tam-ultrasonic-maske-govdesi-819763234/detay" title="Tam Ultrasonıc Maske Gövdesi">
+            <img alt="Tam Ultrasonıc Maske Gövdesi" src="https://i0.shbdn.com/photos/76/32/34/thmb_819763234g33.jpg" srcset="https://i0.shbdn.com/photos/76/32/34/thmb_819763234g33.jpg 1x, https://i0.shbdn.com/photos/76/32/34/lthmb_819763234g33.jpg 2x">
+            <span>Tam Ultrasonıc Maske Gövdesi</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/vasita-otomobil-audi-ozkoc-tan-cam-tavanli-hatasiz-boyasiz-70-binde-s-tronic-a3-816177153/detay" title="Özkoç'tan Cam Tavanlı Hatasız Boyasız ''70 Binde'' S-tronic A3">
+            <img alt="Özkoç'tan Cam Tavanlı Hatasız Boyasız ''70 Binde'' S-tronic A3" src="https://i0.shbdn.com/photos/17/71/53/thmb_816177153v3g.jpg" srcset="https://i0.shbdn.com/photos/17/71/53/thmb_816177153v3g.jpg 1x, https://i0.shbdn.com/photos/17/71/53/lthmb_816177153v3g.jpg 2x">
+            <span>Özkoç'tan Cam Tavanlı Hatasız Boyasız ''70 Binde'' S-tronic A3</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/emlak-arsa-satilik-muallimkoy-de-ful-deniz-ve-kopru-manzarali-tek-tapu-ticari-arsa-797090470/detay" title="Muallimköy'de Ful Deniz Ve Köprü Manzaralı Tek Tapu Ticari Arsa">
+            <img alt="Muallimköy'de Ful Deniz Ve Köprü Manzaralı Tek Tapu Ticari Arsa" src="https://i0.shbdn.com/photos/09/04/70/thmb_79709047043f.jpg" srcset="https://i0.shbdn.com/photos/09/04/70/thmb_79709047043f.jpg 1x, https://i0.shbdn.com/photos/09/04/70/lthmb_79709047043f.jpg 2x">
+            <span>Muallimköy'de Ful Deniz Ve Köprü Manzaralı Tek Tapu Ticari Arsa</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/emlak-konut-satilik-alanya-da-mustakil-deniz-manzarali-villa-701918427/detay" title="Alanya'da Müstakil Deniz Manzaralı Villa.">
+            <img alt="Alanya'da Müstakil Deniz Manzaralı Villa." src="https://i0.shbdn.com/photos/91/84/27/thmb_701918427t6p.jpg" srcset="https://i0.shbdn.com/photos/91/84/27/thmb_701918427t6p.jpg 1x, https://i0.shbdn.com/photos/91/84/27/lthmb_701918427t6p.jpg 2x">
+            <span>Alanya'da Müstakil Deniz Manzaralı Villa.</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/emlak-is-yeri-satilik-kule-plaza-da-satilik-ofis-797044197/detay" title="Kule Plaza'da Satılık Ofis">
+            <img alt="Kule Plaza'da Satılık Ofis" src="https://i0.shbdn.com/photos/04/41/97/thmb_797044197ugz.jpg" srcset="https://i0.shbdn.com/photos/04/41/97/thmb_797044197ugz.jpg 1x, https://i0.shbdn.com/photos/04/41/97/lthmb_797044197ugz.jpg 2x">
+            <span>Kule Plaza'da Satılık Ofis</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/vasita-arazi-suv-pickup-toyota-2015-model-70.000-km-de-3.0-d-4d-land-cruiser-prado-823147689/detay" title="2015 Model 70.000 Km'de 3.0 D 4d Land Cruiser Prado">
+            <img alt="2015 Model 70.000 Km'de 3.0 D 4d Land Cruiser Prado" src="https://i0.shbdn.com/photos/14/76/89/thmb_823147689bt7.jpg" srcset="https://i0.shbdn.com/photos/14/76/89/thmb_823147689bt7.jpg 1x, https://i0.shbdn.com/photos/14/76/89/lthmb_823147689bt7.jpg 2x">
+            <span>2015 Model 70.000 Km'de 3.0 D 4d Land Cruiser Prado</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/emlak-konut-satilik-konacik-da-3-plus1-tek-katli-mustakil-bahceli-villa-746484635/detay" title="Konacık'da 3+1 Tek Katlı Müstakil Bahçeli Villa">
+            <img alt="Konacık'da 3+1 Tek Katlı Müstakil Bahçeli Villa" src="https://i0.shbdn.com/photos/48/46/35/thmb_746484635blb.jpg" srcset="https://i0.shbdn.com/photos/48/46/35/thmb_746484635blb.jpg 1x, https://i0.shbdn.com/photos/48/46/35/lthmb_746484635blb.jpg 2x">
+            <span>Konacık'da 3+1 Tek Katlı Müstakil Bahçeli Villa</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/hayvanlar-alemi-aksesuarlar-buyukbas-kucukbas-1500-m-hayvan-cadiri-30x40-profilli-707814551/detay" title="1500 M² Hayvan Çadırı 30x40 Profilli">
+            <img alt="1500 M² Hayvan Çadırı 30x40 Profilli" src="https://i0.shbdn.com/photos/81/45/51/thmb_707814551t9t.jpg" srcset="https://i0.shbdn.com/photos/81/45/51/thmb_707814551t9t.jpg 1x, https://i0.shbdn.com/photos/81/45/51/lthmb_707814551t9t.jpg 2x">
+            <span>1500 M² Hayvan Çadırı 30x40 Profilli</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/emlak-is-yeri-satilik-kurumsal-kiracili-is-yeri-firsati-26%2C000tl-kira-bedeli-821039291/detay" title="Kurumsal Kiracılı Iş Yeri Fırsatı! 26,000tl Kira Bedeli">
+            <img alt="Kurumsal Kiracılı Iş Yeri Fırsatı! 26,000tl Kira Bedeli" src="https://i0.shbdn.com/photos/03/92/91/thmb_821039291f3y.jpg" srcset="https://i0.shbdn.com/photos/03/92/91/thmb_821039291f3y.jpg 1x, https://i0.shbdn.com/photos/03/92/91/lthmb_821039291f3y.jpg 2x">
+            <span>Kurumsal Kiracılı Iş Yeri Fırsatı! 26,000tl Kira Bedeli</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/vasita-otomobil-opel-sahibinden-kazasiz-boyasiz-kayitsiz-opel-corsa-1.3-enjoy-active-823927610/detay" title="Sahibinden Kazasız Boyasız Kayıtsız Opel Corsa 1.3 Enjoy Active">
+            <img alt="Sahibinden Kazasız Boyasız Kayıtsız Opel Corsa 1.3 Enjoy Active" src="https://i0.shbdn.com/photos/92/76/10/thmb_8239276105ch.jpg" srcset="https://i0.shbdn.com/photos/92/76/10/thmb_8239276105ch.jpg 1x, https://i0.shbdn.com/photos/92/76/10/lthmb_8239276105ch.jpg 2x">
+            <span>Sahibinden Kazasız Boyasız Kayıtsız Opel Corsa 1.3 Enjoy Active</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/is-makineleri-sanayi-tarim-makineleri-traktor-1951-man-4x4-822221072/detay" title="1951 Man 4x4">
+            <img alt="1951 Man 4x4" src="https://i0.shbdn.com/photos/22/10/72/thmb_82222107283h.jpg" srcset="https://i0.shbdn.com/photos/22/10/72/thmb_82222107283h.jpg 1x, https://i0.shbdn.com/photos/22/10/72/lthmb_82222107283h.jpg 2x">
+            <span>1951 Man 4x4</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/emlak-konut-satilik-sahibinden-komisyonsuz-royal-sky-blue-de-1-plus1-sifir-705822027/detay" title="Sahibinden Komisyonsuz Royal Sky Blue'de 1+1 Sıfır">
+            <img alt="Sahibinden Komisyonsuz Royal Sky Blue'de 1+1 Sıfır" src="https://i0.shbdn.com/photos/82/20/27/thmb_705822027u2h.jpg" srcset="https://i0.shbdn.com/photos/82/20/27/thmb_705822027u2h.jpg 1x, https://i0.shbdn.com/photos/82/20/27/lthmb_705822027u2h.jpg 2x">
+            <span>Sahibinden Komisyonsuz Royal Sky Blue'de 1+1 Sıfır</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/emlak-konut-satilik-villa-mustakil-670428841/detay" title="Villa Müstakil">
+            <img alt="Villa Müstakil" src="https://i0.shbdn.com/photos/42/88/41/thmb_670428841ohr.jpg" srcset="https://i0.shbdn.com/photos/42/88/41/thmb_670428841ohr.jpg 1x, https://i0.shbdn.com/photos/42/88/41/lthmb_670428841ohr.jpg 2x">
+            <span>Villa Müstakil</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/ikinci-el-ve-sifir-alisveris-ofis-kirtasiye-ofis-mobilyalari-efsane-buro-sedir-ofis-oturma-bekleme-gurubu-1-plus1-plus2-823326835/detay" title="Efsane Büro/ Sedir Ofis Oturma Bekleme Gurubu 1+1+2">
+            <img alt="Efsane Büro/ Sedir Ofis Oturma Bekleme Gurubu 1+1+2" src="https://i0.shbdn.com/photos/32/68/35/thmb_823326835om7.jpg" srcset="https://i0.shbdn.com/photos/32/68/35/thmb_823326835om7.jpg 1x, https://i0.shbdn.com/photos/32/68/35/lthmb_823326835om7.jpg 2x">
+            <span>Efsane Büro/ Sedir Ofis Oturma Bekleme Gurubu 1+1+2</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/hayvanlar-alemi-aksesuarlar-buyukbas-kucukbas-7x36-hayvan-barinagi-30x30profilli-montajdahil-822822364/detay" title="7x36 Hayvan Barınağı 30x30profilli Montajdahil">
+            <img alt="7x36 Hayvan Barınağı 30x30profilli Montajdahil" src="https://i0.shbdn.com/photos/82/23/64/thmb_822822364x89.jpg" srcset="https://i0.shbdn.com/photos/82/23/64/thmb_822822364x89.jpg 1x, https://i0.shbdn.com/photos/82/23/64/lthmb_822822364x89.jpg 2x">
+            <span>7x36 Hayvan Barınağı 30x30profilli Montajdahil</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/emlak-arsa-satilik-sahibinden-yol-kenari-bulvara-cephe-arsa-745551500/detay" title="Sahibinden Yol Kenarı Bulvara Cephe Arsa">
+            <img alt="Sahibinden Yol Kenarı Bulvara Cephe Arsa" src="https://i0.shbdn.com/photos/55/15/00/thmb_74555150017a.jpg" srcset="https://i0.shbdn.com/photos/55/15/00/thmb_74555150017a.jpg 1x, https://i0.shbdn.com/photos/55/15/00/lthmb_74555150017a.jpg 2x">
+            <span>Sahibinden Yol Kenarı Bulvara Cephe Arsa</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/emlak-arsa-satilik-silivri-imarli-3450-mt-iki-tarafi-yol-kurfalli-terasi-0n-uzeri-685094540/detay" title="Silivri Imarlı 3450 Mt Iki Tarafı Yol Kurfallı Terası 0n Üzeri">
+            <img alt="Silivri Imarlı 3450 Mt Iki Tarafı Yol Kurfallı Terası 0n Üzeri" src="https://i0.shbdn.com/photos/09/45/40/thmb_6850945405v0.jpg" srcset="https://i0.shbdn.com/photos/09/45/40/thmb_6850945405v0.jpg 1x, https://i0.shbdn.com/photos/09/45/40/lthmb_6850945405v0.jpg 2x">
+            <span>Silivri Imarlı 3450 Mt Iki Tarafı Yol Kurfallı Terası 0n Üzeri</span>
+        </a>
+    </li>
+    <li class="vitrin_list">
+        <a href="/ilan/ozel-ders-verenler-spor-muay-thai-kick-boks-boks-ozel-dersleri-823336220/detay" title="Muay Thai - Kick Boks - Boks Özel Dersleri">
+            <img alt="Muay Thai - Kick Boks - Boks Özel Dersleri" src="https://i0.shbdn.com/photos/33/62/20/thmb_823336220vyc.jpg" srcset="https://i0.shbdn.com/photos/33/62/20/thmb_823336220vyc.jpg 1x, https://i0.shbdn.com/photos/33/62/20/lthmb_823336220vyc.jpg 2x">
+            <span>Muay Thai - Kick Boks - Boks Özel Dersleri</span>
+        </a>
+    </li>
+</ul>
+
+
+
+
+<div class="uiBox">
+    <h3 style="font-size:16px;">
+        <small>
+            <a style="font-size: 16px; float: right;" href="/kategori/emlak-projeler/" title="Tüm Projeleri göster">Tüm Projeleri göster</a>
+        </small>
+        Projeler
+    </h3>
+    <div class="estate-projects clearfix">
+        <div class="projects" data-id="3699">
+            <a title="AND Pastel" href="/projeler/p/and-gayrimenkul/and-pastel-kartal/">
+                <img title="AND Pastel" alt="AND Pastel" style="width: 360px;position: relative;  top: -30px;" src="https://s0.shbdn.com/projeler/media/photos/Project/2016/06/6cb1af77a3549542/Self/0f15d45ce3d186d3.jpg">
+            </a>
+            <h4>
+                <a title="AND Pastel" href="https://www.sahibinden.com/emlak-projeler/and-gayrimenkul-and-pastel-kartal-3699/detay" style="font-size: 18px; position: relative; top: -20px;">
+                    AND Pastel<span> (İstanbul / Kartal)</span>
+                </a>
+            </h4>
+            <p class="m2" style="position: relative; top: -20px;">
+                <strong>m<sup>2</sup></strong>: 67 m<sup>2</sup> - 256 m<sup>2</sup>
+            </p>
+            <p class="due-date" style="position: relative; top: -20px;">
+                <strong>Teslim Tarihi</strong>: HemenTeslim
+            </p>
+        </div>
+        <div class="projects" data-id="4005">
+            <a title="Referans Ankara" href="/projeler/p/sf-yildiz-gayrimenkul-insaat/referans-ankara-etimesgut/">
+                <img title="Referans Ankara" alt="Referans Ankara" style="  position: relative; top: -30px;width: 360px; margin-left: 33px;" src="https://s0.shbdn.com/projeler/media/photos/Project/2020/04/dd4caaf3e25495ac/Self/9569d39111dcc361.jpg">
+            </a>
+            <h4>
+                <a title="Referans Ankara" href="https://www.sahibinden.com/emlak-projeler/sf-yildiz-gayrimenkul-insaat-referans-ankara-etimesgut-4005/detay" style="font-size: 18px;position: relative; left: 40px; top:-20px;">
+                    Referans Ankara<span> (Ankara / Etimesgut)</span>
+                </a>
+            </h4>
+            <p class="m2" style="position: relative; left: 40px; top: -20px;">
+                <strong>m<sup>2</sup></strong>: 71 m<sup>2</sup> - 116 m<sup>2</sup>
+            </p>
+            <p class="due-date" style="position: relative; left: 40px; top: -20px;">
+                <strong>Teslim Tarihi</strong>: Aralık 2021
+            </p>
+        </div>
+    </div>
+</div>*@
+<!-- Real Estate Projects -->

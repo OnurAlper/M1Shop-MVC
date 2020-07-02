@@ -1,0 +1,73 @@
+﻿@model IEnumerable<M1Shop.Models.Products>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+
+<p>
+    <a asp-action="Create">
+        <img src="img/directory2-button-icon-plus.png" style="width: 30px;
+                                      position: relative;
+                                      margin-bottom: 10px;
+                                      float: right;" />
+    </a>
+
+</p>
+
+<div class="table-responsive">
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.UnitPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UnitsInStock)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Category)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.OrderDetails)
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr class="bg-light">
+          <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitsInStock)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.CategoryName)
+            </td>
+            <td>
+
+                <a asp-action="Edit" asp-route-id="@item.ProductId"><img src="img/indir.png" width="20px;"/></a>
+                <a asp-action="Details" asp-route-id="@item.ProductId"><img src="img/indir (1).png" width="20px;"/></a>
+                <a asp-action="Delete" asp-route-id="@item.ProductId"><img src="img/images.png" width="20px;"/></a>
+
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+</div>
+

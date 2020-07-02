@@ -1,0 +1,12 @@
+﻿.homepage .homepage-content {
+    width: 838px;
+    float: left;
+}
+.homepage .homepage-content li {
+    float: left;
+    width: 108px;
+    max-height: 109px;
+    padding: 7px 16px 5px 0;
+    text-align: left;
+    font-size: 11px;
+}

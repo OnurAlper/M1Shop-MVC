@@ -1,0 +1,186 @@
+﻿@model M1Shop.ViewModels.CarDetailCreateModels
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+
+<form enctype="multipart/form-data" asp-controller="CarDetail" asp-action="Create" method="post" class="mt-3">
+
+    <div class="form-group row">
+        <label asp-for="CarDateTime" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="CarDateTime" type="date" id="dateDefault" class="form-control" />
+            <span asp-validation-for="CarDateTime" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="CarilanTitle" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="CarilanTitle" type="text" class="form-control" />
+            <span asp-validation-for="CarilanTitle" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Marka" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Marka" class="form-control" />
+            <span asp-validation-for="Marka" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="Seri" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Seri" class="form-control" />
+            <span asp-validation-for="Seri" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Model" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Model" class="form-control" />
+            <span asp-validation-for="Model" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Year" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Year" class="form-control" />
+            <span asp-validation-for="Year" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Yakit" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Yakit" class="form-control" />
+            <span asp-validation-for="Yakit" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Vites" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Vites" class="form-control" />
+            <span asp-validation-for="Vites" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="CarKm" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="CarKm" class="form-control" />
+            <span asp-validation-for="CarKm" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="KasaType" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="KasaType" class="form-control" />
+            <span asp-validation-for="KasaType" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="MotorGücü" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="MotorGücü" class="form-control" />
+            <span asp-validation-for="MotorGücü" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="MotorHacmi" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="MotorHacmi" class="form-control" />
+            <span asp-validation-for="MotorHacmi" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Cekis" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Cekis" class="form-control" />
+            <span asp-validation-for="Cekis" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Renk" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Renk" class="form-control" />
+            <span asp-validation-for="Renk" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Garanti" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <select asp-for="Garanti" class="form-control" asp-items="@Html.GetEnumSelectList<Garanti>()"></select>
+            <span asp-validation-for="Garanti" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Plaka" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Plaka" class="form-control" />
+            <span asp-validation-for="Plaka" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Takas" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <select asp-for="Takas" class="form-control" asp-items="@Html.GetEnumSelectList<Takas>()"></select>
+            <span asp-validation-for="Takas" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Durum" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <select asp-for="Durum" class="form-control" asp-items="@Html.GetEnumSelectList<Durum>()"></select>
+            <span asp-validation-for="Durum" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Photo" class="col-sm-2 col-form-label"></label>
+        <div class="custom-file">
+            <input asp-for="Photo" class="form-control custom-file-input" />
+            <label class="custom-file-label">Browse..</label>
+        </div>
+    </div>
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="form-group row">
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+    </div>
+    @section Scripts{
+        <script>
+            $(document).ready(function () {
+                $('.custom-file-input').on("change", function () {
+                    var fileName = $(this).val().split("\\").pop();
+                    $(this).next('.custom-file-label').html(fileName);
+                });
+            })
+            function setInputDate(_id) {
+                var _dat = document.querySelector(_id);
+                var hoy = new Date(),
+                    d = hoy.getDate(),
+                    m = hoy.getMonth() + 1,
+                    y = hoy.getFullYear(),
+                    data;
+
+                if (d < 10) {
+                    d = "0" + d;
+                };
+                if (m < 10) {
+                    m = "0" + m;
+                };
+
+                data = y + "-" + m + "-" + d;
+                console.log(data);
+                _dat.value = data;
+            };
+
+            setInputDate("#dateDefault");
+
+        </script>
+    }
+</form>
+
+

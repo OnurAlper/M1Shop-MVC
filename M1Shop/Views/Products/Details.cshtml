@@ -1,0 +1,94 @@
+﻿@model M1Shop.Models.Products
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+
+
+<div>
+
+    <hr />
+    <table class="table table-bordered table-responsive table-hover">
+        <thead>
+            <tr >
+                <th class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.ProductName)
+                </th>
+                <td class="col-sm-8">
+                    @Html.DisplayFor(model => model.ProductName)
+                </td>
+            </tr>
+            <tr>
+                <th class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.QuantityPerUnit)
+                </th>
+                <td class="col-sm-10">
+                    @Html.DisplayFor(model => model.QuantityPerUnit)
+                </td>
+            </tr>
+            <tr>
+                <th class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.UnitPrice)
+                </th>
+                <td class="col-sm-10">
+                    @Html.DisplayFor(model => model.UnitPrice)
+                </td>
+            <tr>
+                <th class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.UnitsInStock)
+                </th>
+                <td class="col-sm-10">
+                    @Html.DisplayFor(model => model.UnitsInStock)
+                </td>
+            </tr>
+            <tr>
+                <th class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.UnitsOnOrder)
+                </th>
+                <td class="col-sm-10">
+                    @Html.DisplayFor(model => model.UnitsOnOrder)
+                </td>
+            </tr>
+            <tr>
+                <th class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.ReorderLevel)
+                </th>
+                <td class="col-sm-10">
+                    @Html.DisplayFor(model => model.ReorderLevel)
+                </td>
+            </tr>
+            <tr>
+                <th class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Discontinued)
+                </th>
+                <td class="col-sm-10">
+                    @Html.DisplayFor(model => model.Discontinued)
+                </td>
+            </tr>
+            <tr>
+                <th class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Category)
+                </th>
+                <td class="col-sm-10">
+                    @Html.DisplayFor(model => model.Category.CategoryName)
+                </td>
+            </tr>
+            <tr>
+                <th class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Supplier)
+                </th>
+                <td class="col-sm-10">
+                    @Html.DisplayFor(model => model.Supplier.CompanyName)
+                </td>
+            </tr>
+        </thead>
+       
+    </table>
+
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ProductId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

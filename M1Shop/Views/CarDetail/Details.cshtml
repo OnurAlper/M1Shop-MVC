@@ -1,0 +1,151 @@
+﻿@model M1Shop.Models.CarDetail
+
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    var photoPath = "~/img/" + (Model.PhotoPath ?? "noimage.jpg");
+}
+    <style>
+        #ilancard {
+            float: right;
+            display: inline-block;
+            width: 300px;
+        }
+
+        @@media screen and (max-width:999px),screen and (min-width:325px) {
+            #ilancard {
+                float: right;
+            }
+
+            body {
+                min-width: 1004px;
+            }
+        }
+
+
+        @@media screen and (max-width:768px) {
+            #ilancard {
+                float: right;
+                z-index: 1;
+                position: relative;
+                right: -152px !important;
+            }
+
+            body {
+                min-width: 1004px;
+            }
+
+            #carilancard {
+                width: 422px;
+            }
+        }
+
+        @@media screen and (max-width:1024px),screen and (min-width:501px) {
+            #ilancard {
+                float: right;
+                z-index: 1;
+                position: relative;
+                right: -48px;
+            }
+
+            body {
+                min-width: 1004px;
+            }
+
+            #carilancard {
+                width: 422px;
+            }
+        }
+
+        @@media screen and (max-width: 577px) {
+            body {
+                min-width: 1004px;
+            }
+
+            #ilancard {
+                float: right;
+                z-index: 1;
+                position: relative;
+                right: -13px !important;
+            }
+
+            #carilancard {
+                width: 378px;
+            }
+        }
+
+        @@media screen and (max-width: 425px) {
+            body {
+                min-width: 1004px;
+            }
+
+            #ilancard {
+                float: right;
+                z-index: 1;
+                position: relative;
+                right: -10px !important;
+            }
+
+            #carilancard {
+                width: 578px;
+            }
+        }
+    </style>
+
+<div id="ilancard" class="card border-primary mb-3">
+    <div class="card-header"><h5>@Html.DisplayFor(m => m.IlanUser)</h5></div>
+    <div class="card-body">
+        <p class="card-text ">Üyelik Tarihi @Model.CarDateTime.ToLongDateString()</p>
+    </div>
+    <div class="card-footer">
+
+        <p class="card-text">
+            <a href="@Url.Action("Index","CarDetail",new {email=Model.IlanUser })">Tüm İlanlar</a>
+            <a style="float:right;" href="@Url.Action("Index","CarDetail")">Vitrine Dön</a>
+        </p>
+
+    </div>
+</div>
+
+
+<div class="row justify-content-center m-3">
+    <div class="col-sm-8">
+        <div class="card">
+            <div class="card-header">
+                <h4>@Model.Marka</h4>
+            </div>
+
+            <div class="card-body text-center">
+                <img class="card-img-top" src="@photoPath" asp-append-version="true" />
+
+                <h4 hidden="hidden">Car ID : @Model.CarDetailId</h4>
+                <h4>Car Date : @Model.CarDateTime</h4>
+                <h4>Marka : @Model.Marka</h4>
+                <h4>Seri : @Model.Seri</h4>
+                <h4>Yıl : @Model.Year</h4>
+                <h4>Yakıt : @Model.Yakit</h4>
+                <h4>Vites : @Model.Vites</h4>
+                <h4>Km : @Model.CarKm</h4>
+                <h4>Kasa Tipi : @Model.KasaType</h4>
+                <h4>Motor Gücü : @Model.MotorGücü</h4>
+                <h4>Motor Hacmi : @Model.MotorHacmi</h4>
+                <h4>Çekiş : @Model.Cekis</h4>
+                <h4>Renk : @Model.Renk</h4>
+                <h4>Garanti : @Model.Garanti</h4>
+                <h4>Plaka : @Model.Plaka</h4>
+                <h4>Takas : @Model.Takas</h4>
+                <h4>Durum : @Model.Durum</h4>
+
+
+            </div>
+            <div class="card-footer text-center">
+                <a asp-controller="CarDetail" asp-action="Index" class="btn btn-primary">Vitrine Dön</a>
+                <a href="@Url.Action("Details","CarDetail",new { id=Model.CarDetailId+1})" class="btn btn-primary">Sonraki Sayfa</a>
+
+                <a href="#" class="btn btn-primary">Edit</a>
+                <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    </div>
+</div>
